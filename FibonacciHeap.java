@@ -43,6 +43,7 @@ public class FibonacciHeap {
 
     public void insert(int key, int elementIndex) { // добавление
 
+
         long startTime = System.nanoTime();
         insertOperations++;
 
@@ -385,5 +386,11 @@ public class FibonacciHeap {
 
     public long getDeleteOperations() {
         return deleteOperations;
+    }
+    public void resetInsertOperations() {
+        insertOperations = 0;
+    }
+    public void resetDeletOperations(){
+        deleteOperations = 0;
     }
 }
