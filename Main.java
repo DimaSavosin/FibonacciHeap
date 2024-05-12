@@ -11,7 +11,7 @@ public class Main {
 
         for (int i = 0; i < array.length; i++) {
             long startTimeInsert = System.nanoTime(); // Записываем время начала операции
-
+            heap.resetInsertOperations();
             // Вызываем метод insert с указанием индекса элемента
             heap.insert(array[i], i);
 
@@ -77,7 +77,7 @@ public class Main {
             int elementToRemove = array[random.nextInt(array.length)]; // Случайный элемент из массива
 
             long startTimeDelete = System.nanoTime(); // Записываем время начала операции
-
+            heap.resetDeletOperations();
             // Удаляем элемент из кучи
             boolean removed = heap.delete(elementToRemove);
 
