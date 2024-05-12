@@ -89,7 +89,7 @@ public class Main {
             // Обновляем общее количество операций
             totalOperationsDelete += operationsAfterDelete;
             //System.out.println(deleteTime);
-            System.out.println(operationsAfterDelete);
+            //System.out.println(operationsAfterDelete);
 
             // Обновляем общее время выполнения
             totalTimeDelete += deleteTime;
